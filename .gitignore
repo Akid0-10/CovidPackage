@@ -1,18 +1,35 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
 
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   admin_dashboard.php
+#	new file:   application_form.php
+#	new file:   application_status.php
+#	new file:   config.php
+#	new file:   dashboard.css
+#	new file:   delete-user.php
+#	new file:   delivery-process.php
+#	new file:   forgot-password.php
+#	new file:   image/$covid
+#	new file:   index.css
+#	new file:   index.html
+#	new file:   login-process.php
+#	new file:   login.php
+#	new file:   logout.php
+#	new file:   package-status-admin.php
+#	new file:   package_status.php
+#	new file:   patient_dashboard.php
+#	new file:   process-application.php
+#	new file:   process-request.php
+#	new file:   register-list.php
+#	new file:   register-process.php
+#	new file:   register.php
+#	new file:   request-hub.php
+#	new file:   style.css
+#	new file:   update-user-profile.php
+#
