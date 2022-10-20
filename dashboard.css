@@ -1,0 +1,203 @@
+body {
+    height: 100%;
+    background-image: url(https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+
+    float: left;
+    width: 21%;
+    background-color: rgb(0, 103, 103);
+    position: fixed;
+    margin-left: -40px;
+    height: 100vh;
+}
+
+nav h1 {
+    text-align: center;
+    background-color: rgb(0, 174, 174);
+    padding: 20%;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 33px;
+    padding-right: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(0, 174, 174);
+    font-size: 20px;
+    padding: 2%;
+    padding-left: 16%;
+    font-weight: lighter;
+    padding-bottom: 6%;
+}
+
+.logout {
+    position: absolute;
+    /* color: white; */
+    background-color: rgb(0, 174, 174);
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 44%;
+    padding-right: 36%;
+    font-weight: bold;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+}
+
+.logout:visited {
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    margin-top: -16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    margin-bottom: 16px;
+    padding-left: 80px;
+    color: black;
+}
+
+nav ul li a.active {
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: rgba(21, 37, 115, 0.6);
+    color: white;
+}
+
+section {
+    float: right;
+    width: 79%;
+    background-color: white;
+    padding-right: 40px;
+    height: 760px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container>div{
+    flex: 30%;
+    margin: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 24px;
+    padding: 1%;
+    box-sizing: content-box;
+    background-color: rgba(4, 209, 213, 0.3);
+}
+
+.profile h1{
+    margin: 0;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    margin: auto;
+}
+
+input[type="button"], [type="reset"], [type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    display: inline;
+    margin: auto;
+    margin-top: 2%;
+    width: 120px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container>div h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+textarea {
+    resize: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2%;
+}
+
+.container>div a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* .profile a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+    padding: 10px;
+    border-radius: 20px;
+} */
+
+@media screen and (max-width:800px) {
+
+    header,
+    section,
+    aside,
+    footer,
+    nav {
+      width: 100%;
+      padding: 0;
+    }
+}

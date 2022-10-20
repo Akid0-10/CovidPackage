@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    width: 420px;
+    height: 520px;
+    background: rgb(0, 0, 0, 0.65);
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1 {
+    margin: 0;
+    padding: 0px 0px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box input[type="text"], [type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 14   px;
+}
+
+
+.box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    display: block;
+    margin: auto;
+    width: 100px;
+    background: rgb(0, 150, 255);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.box input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 100, 255);
+}
+
+.box a {
+    display: inline-block;
+    text-decoration: none;
+    color: darkgray;
+    line-height: 12px;
+    font-size: 16px;
+}
+
+.box a:hover {
+    color: white;
+}
+
+.error {
+    background-color: #fff;
+    color: black;
+    padding: 2%;
+}
+
+@media screen and (max-width:420px) {
+    .box {
+        width: 100%;
+    }
+}

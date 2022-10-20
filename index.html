@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page's Title -->
+    <title>covidPackage</title>
+    <!-- Linked the page to it's CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+    <script>
+
+        // The function will take user to desired pages based on their input
+
+        function login(){
+            window.location.href="login.php"
+        }
+
+        function signup(){
+            window.location.href="register.php"
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- The page heading -->
+    <h1>covidPackage</h1>
+
+    <!-- A description of the page -->
+    <h2>We deliver to your home.</h2><br>
+
+    <!-- Buttons to take user to their desired page, login or register -->
+    <input type="button" value="Login" name="login" onclick="login()">
+    <input type="button" value="Sign Up" name="signup" onclick="signup()">
+
+    <!-- Footer display at the bottom of the page -->
+    <footer>
+        <!-- Tell the ownership of the page -->
+        <h5>Copyright &copy; Group D2</h5>
+    </footer>
+</body>
+</html>
