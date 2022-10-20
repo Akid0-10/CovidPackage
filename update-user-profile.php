@@ -3,5 +3,5 @@
 
     $username = $_GET["username"];
 
-    $sql = "UPDATE "
+    // $sql = "UPDATE "
 ?>
