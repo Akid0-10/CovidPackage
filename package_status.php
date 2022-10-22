@@ -70,9 +70,6 @@
 
                                         echo "Your package has been shipped out.<br>Kindly wait it to arrived.";
 
-                                        ?>
-                                            <a href="delivery-process.php?username=<?$username?>">Package Arrived</a>
-                                        <?
                                     }
 
                                     //When the status value is other than above e.g('arrived')
