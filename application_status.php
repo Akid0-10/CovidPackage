@@ -63,6 +63,10 @@
                                     
                                     echo "Congratulation!!!<br>Your application has been approved.<br><br>";
                                     echo "<br>Username: ".$row['username']."<br>Name: ".$row['name']."<br>Address: ".$row['address']."<br>Instructions: ".$row['instruction']."<br>Status: ".$row['status']."<br>";
+
+                                    ?>
+                                        <a href="delivery-process.php?username=<?$username?>">Package Arrived</a>
+                                    <?
                                 }
                                 
                             }
