@@ -95,9 +95,7 @@ h1 {
 }
 
 .error {
-    background-color: #fff;
-    color: black;
-    padding: 2%;
+    color: #ff0000;
 }
 
 @media screen and (max-width:420px) {

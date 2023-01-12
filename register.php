@@ -78,7 +78,7 @@
             <!-- Register button use onclick features which use a JavaScripts to performs it's function -->
             <input type="submit" name="register" id="register" value="Register" onclick="registerBut()"><br>
             <a href="login.php">Already have an account? Login here.</a>
-            <p><?php $_SESSION["status"]; ?></p>
+            <p class="error"><?php $_SESSION["status"]; ?></p>
         </form>
     </div>
 
