@@ -49,7 +49,7 @@
                                 if($row['status'] == "in process"){
 
                                     // Print out the data
-                                    echo "<br>Username: ".$row['username']."<br>Name: ".$row['name']."<br>Address: ".$row['address']."<br>Instructions: ".$row['instruction']."<br>Covid Status: ".$row['covid_status']."<br>";
+                                    echo "<br>Username: ".$row['username']."<br>Name: ".$row['name']."<br>Address: ".$row['address']."<br>Instructions: ".$row['instruction']."<br>Covid Status: ".base64_encode($row['covid_status'])."<br>";
 
                                 ?><br>
 
