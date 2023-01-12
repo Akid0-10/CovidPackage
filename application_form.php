@@ -1,3 +1,12 @@
+<?php
+require_once "login-process.php";
+
+if(!isset($_SESSION["user"])) {
+    header("Location: index.html");
+    die();
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -82,7 +91,7 @@
                                 <!-- User's input for their delivery adddress -->
                                 <tr>
                                     <td>Address: </td>
-                                    <td><textarea name="address" id="address" cols="30" rows="7"></textarea></td>
+                                    <td><textarea name="address" id="address" cols="30" rows="7" required></textarea></td>
                                 </tr>
                             
                                 <!-- User's input for the instruction to the courier -->
@@ -94,7 +103,7 @@
                                 <!-- User's will upload their files as proof for their covid status -->
                                 <tr>
                                     <td>Covid Status: </td>
-                                    <td><input type="file" name="image" id="image"></td>
+                                    <td><input type="file" name="image" id="image" required></td>
                                 </tr>
 
                                 <!-- Button to submit the form or reset it -->

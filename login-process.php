@@ -1,62 +1,63 @@
 <?php
 
-    //Include the database connection
-    include "config.php";
+//Include the database connection
+include "config.php";
 
-    //Start a session to use it
-    session_start();
+//Start a session to use it
+session_start();
+$_SESSION["status"] = "";
 
-    //When the button login is set/clicked
-    if(isset($_POST["login"])){
-        
-        //Set and assign value to the variables
-        $username = $_POST["username"];
-        $password = $_POST["password"];
+//When the button login is set/clicked
+if (isset($_POST["login"])) {
 
-        //SQL statement to select all data from login table for the selected user
-        $sql = "SELECT * FROM login WHERE username = '$username'";
+    //Set and assign value to the variables
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-        //Data query based on the SQL statement above
-        $result = $conn->query($sql);
+    //SQL statement to select all data from login table for the selected user
+    $sql = "SELECT * FROM login WHERE username = '$username'";
 
-        //Fetch the row data
-        $row = $result->fetch_assoc();
+    //Data query based on the SQL statement above
+    $result = $conn->query($sql);
 
-        //When the number of rows found is more than 0
-        if($result->num_rows > 0){
+    //Fetch the row data
+    $row = $result->fetch_assoc();
 
-            //When the username and password matched with the ones in the login table
-            if($username==$row["username"]&&$password==$row["password"]){
+    //When the number of rows found is more than 0
+    if ($result->num_rows > 0) {
 
-                //Assign the session's user value of username
-                $_SESSION["user"] = $_POST['username'];
+        //When the username and password matched with the ones in the login table
+        if ($username == $row["username"] && $password == $row["password"]) {
 
-                //Head to patient dashboard if the username is not an admin
-                if($username!="admin"){
-                    
-                    header("Location: patient_dashboard.php");
-                }
+            //Assign the session's user value of username
+            $_SESSION["user"] = $_POST['username'];
 
-                //Head into admin dashboard if the user is an admin
-                else{
+            //Head to patient dashboard if the username is not an admin
+            if ($username != "admin") {
 
-                    header("location: admin_dashboard.php");
-                }
+                header("Location: patient_dashboard.php");
             }
 
-            //When the password do no match with the one in the login table
-            else{
+            //Head into admin dashboard if the user is an admin
+            else {
 
-                echo "Wrong password";
+                header("location: admin_dashboard.php");
             }
         }
 
-        //When the username could not be found in the login table
-        else{
+        //When the password do no match with the one in the login table
+        else {
 
-            echo "There no such user find in the system";
+            $_SESSION["status"] = "Wrong password";
         }
     }
+
+    //When the username could not be found in the login table
+    else {
+
+        $_SESSION["status"] = "There no such user find in the system";
+    }
+}
 
 
 ?>

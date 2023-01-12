@@ -41,12 +41,13 @@
                 }
             ?> -->
             <p>Username</p>
-            <input type="text" name="username" id="username" placeholder="Enter Username">
+            <input type="text" name="username" id="username" placeholder="Enter Username" required>
             <p>Password</p>
-            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
             <input type="submit" name="login" id="login" value="Login"><br>
             <!-- <a href="forgot-password.php" >Forgot password?</a><br> -->
             <a href="register.php" class="register">Don't have an account? Register here.</a>
+            <p><?php echo $_SESSION["status"]; ?></p>
             </form>
         </div>
 
